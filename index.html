@@ -33,7 +33,7 @@
 .input{
   border-radius: 10px;
     margin-top: 0%;
-    width: 48.7%;
+    width: 47%;
     height: 150px;
     font-size: 20px;
     border-style: solid;
@@ -121,7 +121,7 @@ text-transform: underline ;
   text-align: center;
   border-radius: 20px;
   margin-top: 11%;
-    width: 530px;
+    width: 600px;
     height: 340px;
     font-size: 20px;
     border-style: solid;
@@ -151,6 +151,7 @@ border-width: 2px;
   border-color: midnightblue;
   transition: 0.5s;
   text-transform: uppercase;
+  background-color: transparent;
 
 }
 </style>
@@ -183,9 +184,9 @@ function showout() {
   if(sel.value == sel1.value) {
     alert("Select lenguages !");
   } else {
-    document.getElementById("input").style.cssText = "width: 48.7%;"
+    document.getElementById("input").style.cssText = "width: 47%;"
   document.getElementById("output").style.cssText = "width: 0px;"
-  setTimeout(function(){document.getElementById("output").style.cssText = "width: 48.7%;"}, 900)
+  setTimeout(function(){document.getElementById("output").style.cssText = "width: 47%;"}, 900)
   s = "true";
   }
 }
@@ -230,7 +231,7 @@ document.getElementById("about").style.display = "none"
 document.getElementById("contact").style.display = "inline"
 document.getElementById("community").style.display = "none"
 setTimeout(function(){document.getElementById("contactdiv").style.width = "950px"}, 100)
-setTimeout(function(){document.getElementById("contactdiv").style.width = "530px"}, 1000)
+setTimeout(function(){document.getElementById("contactdiv").style.width = "630px"}, 1000)
 
 closeNav();
 }
@@ -307,4 +308,4 @@ And in collaboration with The Programmers team:
 
    
 </body>
-</html> 
+</html>
