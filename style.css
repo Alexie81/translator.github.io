@@ -22,27 +22,34 @@ body {
 }
 
 .input{
-  border-radius: 10px;
+  outline: none;
+  border-radius: 3px;
     margin-top: 0%;
-    width: 47%;
+    width: 46%;
     height: 150px;
     font-size: 20px;
     border-style: solid;
     border-color: black;
-    border-width: 3px;
+    border-width: 1.5px;
     color: black;
     resize: none;
+    border-radius: 0.2rem;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.1), 0px 5px 12px rgba(0, 0, 0, 0.07);
+    text-size-adjust: 100%;
 }
 
 #input{
   overflow-x: hidden;
-  transition: 0.7s;
+  transition: 0.2s;
   z-index: 1;
 }
 
 #output{
   overflow-x: hidden;
-  transition: 0.9s;
+  transition: 0.1s;
   z-index: 1;
 }
 

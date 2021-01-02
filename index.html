@@ -24,7 +24,7 @@
     <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;  <i><strong><u>Translator Express</u></i></strong></span>
     <div id="main">
     <br>
-    <p align="center"><select id="dp1" class="chosen"><option value="1" id="op1" selected="selected">English</option><option value="2">German</option></select> <button id="switchbutton" align="center" onclick="transfer()">&#x21c4</button> <select id="dp2" class="chosen"><option value="1" id="op2">English</option><option value="2" selected="selected">German</option></select> </p>
+    <p align="center"><select id="dp1" class="chosen" onchange="verificare()" ><option value="1" id="op1" selected="selected">English</option><option value="2">German</option></select> <button id="switchbutton" align="center" onclick="transfer()">&#x21c4</button> <select id="dp2" class="chosen" onchange="verificare()"><option value="1" id="op2">English</option><option value="2" selected="selected">German</option></select> </p>
     <p align="center"><textarea id="input" class="input" align="left" placeholder="//INPUT"></textarea>    <textarea id="output" class="input" align="right" placeholder="//OUTPUT"></textarea></p>
 
 
@@ -55,7 +55,7 @@ And in collaboration with The Programmers team:
 </pre>
 </div>
 </div>
-<div id="community" style="transition: 0.4s;overflow-x: hidden;">
+<div id="community" style="transition: 0.5s;overflow-x: hidden;">
 </div>
 
    

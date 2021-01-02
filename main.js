@@ -1,12 +1,20 @@
 window.onload = function(e) {
-    document.getElementById("output").style.display = "none"
-    document.getElementById("input").style.cssText = "width:97%;";
+    document.getElementById("output").style.display = "inline"
+    document.getElementById("input").style.cssText = "width:46%;";
     document.getElementById("main").style.display = "inline"
     document.getElementById("settings").style.display = "none"
     document.getElementById("about").style.display = "none"
     document.getElementById("contact").style.display = "none"
     document.getElementById("community").style.display = "none"
     
+}
+function verificare() {
+    var x;
+        var sel = document.getElementById('dp1');
+        var sel1 = document.getElementById('dp2');
+        sel.value = "1";
+        sel1.value = "2";
+        document.getElementById("switchbutton").click();
 }
     var s;
     function openNav() {
@@ -26,21 +34,15 @@ window.onload = function(e) {
         } else {
             var input = document.getElementById("input"), output = document.getElementById("output");
             console.log(input.value);
-
-            input.style.cssText = "width: 47%;"
-            output.style.cssText = "width: 0px;"
+            document.getElementById("output").style.cssText = "transform:translateX(-20px);";
+            setTimeout(function(){ document.getElementById("output").style.cssText = "transform:translateX(0px);"; }, 100);
             output.value = input.value;
-            setTimeout(function(){document.getElementById("output").style.cssText = "width: 47%;"}, 900)
             s = "true";
         }
     }
 
     function main() {
-    if(s=="true") {
         document.getElementById("output").style.display = "inline"
-    } else {
-    document.getElementById("output").style.display = "none"
-    }
     document.getElementById("main").style.display = "inline"
     document.getElementById("settings").style.display = "none"
     document.getElementById("about").style.display = "none"
